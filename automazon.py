@@ -21,6 +21,35 @@ except:
     assert driver.current_url == correct_url, "Incorrect landing page URL"
     assert driver.title == correct_title, "Incorrect landing page title"
 
+# Perform login
+login_link = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.CSS_SELECTOR, "#nav-link-accountList"))
+)
+login_link.click()
+
+# Fill in your Amazon email/phone and click Continue
+email_input = WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.ID, "ap_email"))
+)
+email_input.send_keys("your-email")
+
+continue_button = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.ID, "continue"))
+)
+continue_button.click()
+
+# Fill in your Amazon password and click Sign In
+password_input = WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.ID, "ap_password"))
+)
+password_input.send_keys("your-password")
+
+signin_button = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.ID, "signInSubmit"))
+)
+signin_button.click()
+
+
 # Print URL and title
 print("URL:", driver.current_url)
 print("Title:", driver.title)
