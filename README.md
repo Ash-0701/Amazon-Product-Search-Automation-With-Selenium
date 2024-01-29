@@ -48,12 +48,13 @@ You can customize the script by modifying the following parameters in the `autom
 1. Navigate to https://www.amazon.in/ 
 2. Verify landing on the correct page
 3. Print the URL and Title of the Page
-4. Search for "mobile"
-5. Select 4 stars under customer review filter section
-6. Select the price range between ₹10,000 - ₹20,000
-7. Click on the first search result
-8. Add the phone to the cart
-9. Click on the Go to cart button
+4. login to you amazon account
+5. Search for "mobile" or any other product
+6. Select 4 stars under customer review filter section (you can set any other filter)
+7. Select the price range between ₹10,000 - ₹20,000
+8. Click on the first search result
+9. Add the phone to the cart
+10. Click on the Go to cart button
 
 
 
